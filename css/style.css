@@ -1,0 +1,86 @@
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+
+div .logo{
+    width: 23%;
+    padding: 1%;
+}
+
+nav {
+    width: 73%;
+    color: #54428E;
+}
+
+nav ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+heroSection{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 600px;
+    padding: 25px;
+}
+
+.content{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+footer{
+    color: #54428E;
+    background-color: #e5e5e5;
+}
+
+.hamburgerMenu {
+    content: url("../images/hamburgerMenu.png");
+}
+
+footer ul{
+    display:flex;
+    justify-content: center;
+}
+
+.caseStudies {
+  margin-left: 15em;
+  margin-right: 15em;  
+}
+
+.caseStudies > *{
+    margin: 30px 0;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+}
+
+.card > *{
+    width: 300;
+    margin: 0 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    nav ul{
+        display: none;
+    }
+    .card{
+        flex-direction: column;
+    }
+
+    .card:nth-child(2){
+        flex-direction: column-reverse;
+    }
+
+    .card > *{
+        width: 100%;
+    }
+}
